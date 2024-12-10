@@ -1,0 +1,44 @@
+{
+  "general": {
+    "404": {
+      "title": "Page Not Found",
+      "homeButton": "Back To Home Page"
+    }
+  },
+  "workOrders": {
+    "list": {
+      "add": "Add",
+      "To Do": "Add",
+      "In Progress": "In Progress",
+      "Done": "Done",
+
+      "no_workOrders": "No workOrders to show.",
+      "no_workOrders_matched": "No matched results."
+    },
+    "form": {
+      "title": "Create New Task",
+      "editTitle": "Edit Task",
+      "name": "Name",
+      "description": "Description",
+      "priority": "Priority",
+      "minLength": "minimum number of characters should be 3",
+      "maxLength": "max Length exceeded",
+      "required": "this field is required",
+      "cancel": "Cancel",
+      "create": "Create",
+      "update": "Update"
+    },
+    "delete": {
+      "deleteWithCount": "Delete ({{count}})",
+      "dialog": {
+        "title": "Delete Tasks",
+        "single": "Are you sure you want to delete the task '{{taskName}}'?",
+        "multiple": "Are you sure you want to delete {{count}} tasks?",
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    }
+  },
+  "success_message_key": "Action completed successfully!",
+  "error_message_key": "An error occurred. Please try again."
+}

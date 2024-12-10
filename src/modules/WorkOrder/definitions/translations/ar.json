@@ -1,0 +1,41 @@
+{
+  "general": {
+    "404": {
+      "title": "الصفحة غير موجودة",
+      "homeButton": "الرجوع إلى الصفحة الرئيسية"
+    }
+  },
+  "workOrders": {
+    "list": {
+      "add": "إضافة",
+      "To Do": "مهمام",
+      "In Progress": "قيد التنفيذ",
+      "Done": "تم"
+    },
+    "form": {
+      "title": "إنشاء مهمة جديدة",
+      "editTitle": "تعديل المهمة",
+      "name": "الاسم",
+      "description": "الوصف",
+      "priority": "الأولوية",
+      "minLength": "يجب أن يكون الحد الأدنى لعدد الحروف 3",
+      "maxLength": "تم تجاوز الحد الأقصى للطول",
+      "required": "هذا الحقل مطلوب",
+      "cancel": "إلغاء",
+      "create": "إنشاء",
+      "update": "تحديث"
+    },
+    "delete": {
+      "deleteWithCount": "حذف ({{count}})",
+      "dialog": {
+        "title": "حذف المهام",
+        "single": "هل أنت متأكد أنك تريد حذف المهمة '{{taskName}}'؟",
+        "multiple": "هل أنت متأكد أنك تريد حذف {{count}} من المهام؟",
+        "cancel": "إلغاء",
+        "confirm": "تأكيد"
+      }
+    }
+  },
+  "success_message_key": "تمت العملية بنجاح!",
+  "error_message_key": "حدث خطأ. يرجى المحاولة مرة أخرى."
+}
