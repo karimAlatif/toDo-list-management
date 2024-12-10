@@ -1,6 +1,68 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Task Management App
+
+## View
+
+- The screen is divided into three columns, each representing a unique state: **Todo**, **In Progress**, and **Done**.
+- **Add Button**: Allows users to create new tasks.
+- **Delete Button**: Enables deletion of multiple selected tasks.
+- **Language Switcher**: Allows users to toggle between Arabic and English for the entire app.
+
+## Board
+
+- Users can drag tasks between columns: from **Todo** to **In Progress**, and from **In Progress** to **Done**, and vice versa.
+- Action buttons (e.g., **Checkbox**, **Edit**, and **Remove**) are only visible in the **Todo** column.
+- Each task contains:
+  - **Name** (required)
+  - **Description** (optional)
+  - **Priority** (LOW, MEDIUM, HIGH), which is reflected on the task card through icon.
+- Data is fetched from **local storage** and persists through user interactions, such as dragging, creating, editing, and deleting tasks.
+- Each column shows the number of tasks it contains.
+- When multiple tasks are selected, a global **Delete** button is displayed, showing the number of selected items.
+- When selecting a task (or tasks), the individual task action buttons (e.g., **Edit**, **Delete**) and the **Create Button** are hidden until the user takes action or resets the selection.
+- The screen is **responsive**, adjusting to various screen sizes (Desktop, Tablet, and Mobile).
+
+## Create Task
+
+- A **Create Task** dialog opens, allowing users to enter task details:
+  - **Name**: Required (min: 3 characters, max: 18 characters).
+  - **Description**: Optional (max: 32 characters).
+  - **Priority**: Required (LOW, MEDIUM, HIGH).
+- Users can navigate between dialog fields using the keyboard (press **Enter** to submit, **Esc** to close).
+- The dialog includes **error validation** to prevent task creation until all fields are filled correctly.
+- The dialog is fully **translated**, including text and direction.
+- Upon clicking **Create**, the dialog closes, and feedback is shown based on the result.
+- The main board updates immediately to reflect the newly created task.
+- Data is saved in **local storage** and persists after page refreshes.
+
+## Update Task
+
+- The **Update Task** dialog opens with pre-filled data from the selected task.
+- The **Update** button is disabled until changes are made to the default data.
+- The same validation rules from the **Create** dialog apply to updates.
+- After clicking **Update**, the dialog closes, and feedback is shown based on the result.
+- The main board updates immediately to reflect the changes.
+- Data is saved in **local storage** and persists after page refreshes.
+
+## Delete Task
+
+### Single Task Delete
+
+- A confirmation dialog opens when the user clicks **Delete**.
+- The dialog is fully **translated**, including text and direction.
+- After confirming deletion, the dialog closes, and feedback is shown based on the result.
+- The main board updates immediately to reflect the task removal.
+- Data is saved in **local storage** and persists after page refreshes.
+
+### Multiple Task Delete
+
+- Users can select multiple tasks, and the **Delete** button is enabled.
+- A confirmation dialog opens, showing the number of selected tasks.
+- After confirming deletion, the dialog closes, and feedback is shown based on the result.
+- The main board updates immediately to reflect the removal of selected tasks.
+- Data is saved in **local storage** and persists after page refreshes.
+
 
 ## Available Scripts
 
